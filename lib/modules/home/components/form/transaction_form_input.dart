@@ -6,6 +6,8 @@ class TransactionFormInputWidget extends StatelessWidget {
   final TextEditingController controller;
   final TextInputType? keyboardType;
   final bool? enabled;
+  final IconData? icon;
+  final Function()? onIconPressed;
 
   const TransactionFormInputWidget({
     required this.labelText,
@@ -13,6 +15,8 @@ class TransactionFormInputWidget extends StatelessWidget {
     required this.controller,
     this.keyboardType,
     this.enabled,
+    this.icon,
+    this.onIconPressed,
     Key? key,
   }) : super(key: key);
 
@@ -37,6 +41,11 @@ class TransactionFormInputWidget extends StatelessWidget {
         controller: controller,
         keyboardType: keyboardType == null ? TextInputType.none : keyboardType!,
         decoration: InputDecoration(
+          suffixIcon: IconButton(
+            iconSize: 28,
+            icon: Icon(icon),
+            onPressed: onIconPressed,
+          ),
           labelText: labelText,
           hintText: hintText,
           border: const OutlineInputBorder(

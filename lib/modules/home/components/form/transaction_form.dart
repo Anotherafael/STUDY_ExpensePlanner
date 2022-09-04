@@ -74,11 +74,9 @@ class _TransactionFormWidgetState extends State<TransactionFormWidget> {
                     labelText: 'Date',
                     hintText: 'mm/DD/yyyy',
                     controller: _dateController,
+                    icon: Icons.calendar_today,
+                    onIconPressed: _showDatePicker,
                   ),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.calendar_today),
-                  onPressed: _showDatePicker,
                 ),
               ],
             ),

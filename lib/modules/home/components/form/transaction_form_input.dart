@@ -60,7 +60,7 @@ class TransactionFormInputWidget extends StatelessWidget {
   }
 
   bool isValidAmount(String value) {
-    RegExp regExp = RegExp(r'(^\d*\.?\d*)');
+    RegExp regExp = RegExp(r'[+-]?[0-9]+(\\.[0-9]+)?([Ee][+-]?[0-9]+)?');
     if (regExp.hasMatch(value)) {
       return true;
     }

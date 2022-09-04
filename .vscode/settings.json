@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 3,
+    "[dart]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.rulers": [],
+    },
+    "explorer.compactFolders": false,
+    "docwriter.style": "Google"
+}

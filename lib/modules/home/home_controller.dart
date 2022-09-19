@@ -36,6 +36,20 @@ class HomeController with ChangeNotifier, DiagnosticableTreeMixin {
 
   DateTime? selectedDate;
 
+  bool showChart = false;
+
+  void toggleShowChart() {
+    showChart = !showChart;
+    notifyListeners();
+  }
+
+  bool inputSelected = false;
+
+  void toggleInputSelected() {
+    inputSelected = !inputSelected;
+    notifyListeners();
+  }
+
   Future<void> addTransaction(
     String title,
     double amount,

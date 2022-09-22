@@ -3,10 +3,14 @@
 Um projeto desenvolvido para concluir o curso <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" alt="Link to course" target="_blank">Flutter & Dart - The Complete Guide [2022 Edition]</a>
 
 Sua função principal é gerenciar as compras do usuário. Estão inclusos as funções de: 
-- criar uma transação 
-- remover uma transação
+- criar uma transação (clicar no botar +)
+- validação de formulário
+- remover uma transação (arrastar para o lado)
 - visualizar lista de transações
-- visualizar lista de gastos nos últimos 7 dias.
+- visualizar lista de gastos nos últimos 7 dias
+
+Observações adicionais:
+- em landscape somente é possível ver um dos dois: ou a lista ou o chart
 
 ## PICTURES
 
